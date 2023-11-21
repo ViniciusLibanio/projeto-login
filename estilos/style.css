@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 
+
+
 /*
     Paleta de cores
     verde: #49a09d
@@ -14,7 +16,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     background-color: grey;
     height: 100vh;
     width: 100vw;
@@ -26,7 +29,7 @@ main {
     width: 100vw;
 }
 
-section#login > div#imagem {
+section#login>div#imagem {
     display: block;
     background: grey url(../imagens/imagemlogin.jpg) no-repeat;
     height: 200px;
@@ -34,10 +37,10 @@ section#login > div#imagem {
     background-size: cover;
 }
 
-section#login > div#formulario {
+section#login>div#formulario {
     display: block;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 5px;
+    margin-top: 2px;
 }
 
 section#login {
@@ -46,10 +49,10 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    transition: width 0.3s, height 0.3s;
+    transition: width 0.5s, height 0.3s;
     transition-timing-function: ease;
-    
-    
+
+
     background-color: white;
     height: 500px;
     width: 300px;
@@ -57,5 +60,83 @@ section#login {
     box-shadow: 0px 0px 10px rgb(59, 59, 59);
 }
 
+div#formulario>h1 {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+div#formulario>p {
+    font-size: 0.9em;
+    text-indent: 10px;
+}
+
+div.campo {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(99, 91, 92);
+    height: 40px;
+    margin-bottom: 4px;    
+    background-color: rgb(99, 91, 92);
+}
 
 
+input#ilogin {
+    float: right;
+    border-radius: 5px;
+    height: 35px;
+    width: 90%;
+    font-size: 1.1em;
+}
+
+input#isenha {
+    float: right;
+    border-radius: 5px;
+    height: 35px;
+    width: 90%;
+    font-size: 1.1em;
+}
+
+
+.pulse {
+    animation: pulse 3s infinite;
+    display: contents;
+  }
+  
+  @keyframes pulse {
+    0% {
+      font-variation-settings: 'wght' 100;
+    }   
+    50% {
+      font-variation-settings: 'wght' 700;
+    }
+    100% {
+      font-variation-settings: 'wght' 100;
+    }
+  }
+
+  div#entrar>input {
+    height: 35px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  div#esqueci {
+    height: 30px;
+    font-size: 1em;
+  }
+
+  #entrar {
+    display: block;
+    text-align: center;
+    
+    
+    
+    
+    background-color: black;
+  }
+
+  #esqueci {
+    display: block;
+    text-align: center;
+    border: 1px solid grey;
+  }
