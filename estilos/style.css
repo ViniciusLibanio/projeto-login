@@ -9,6 +9,16 @@
     lilás: #5f2c82
 */
 
+:root {
+    --verdeclaro: #c0e084;
+    --salmao: #e09484;
+    --roxo: #84a1e1;
+    --cinza: #7a808b;
+    --verdemilitar: #576145;
+}
+
+
+
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
@@ -18,7 +28,7 @@
 
 body,
 html {
-    background-color: grey;
+    background-color: var(--cinza);
     height: 100vh;
     width: 100vw;
 }
@@ -31,7 +41,7 @@ main {
 
 section#login>div#imagem {
     display: block;
-    background: grey url(../imagens/imagemlogin.jpg) no-repeat;
+    background: var(--cinza) url(../imagens/imagemlogin.jpg) no-repeat;
     height: 200px;
     background-position: center;
     background-size: cover;
@@ -68,15 +78,13 @@ div#formulario>h1 {
 div#formulario>p {
     font-size: 0.9em;
     text-indent: 10px;
+    text-align: justify;
 }
 
 div.campo {
     width: 100%;
-    border-radius: 5px;
-    border: 1px solid rgb(99, 91, 92);
     height: 40px;
-    margin-bottom: 4px;    
-    background-color: rgb(99, 91, 92);
+    margin: 5px 0px 0px 0px;
 }
 
 
@@ -115,28 +123,32 @@ input#isenha {
   }
 
   div#entrar>input {
-    height: 35px;
+    height: 40px;
     width: 100%;
     font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e09484;
+    color: white;
   }
 
-  div#esqueci {
-    height: 30px;
-    font-size: 1em;
+  div#entrar>input:hover {
+    background-color: #b4776b;
   }
 
   #entrar {
     display: block;
     text-align: center;
-    
-    
-    
-    
-    background-color: black;
   }
 
-  #esqueci {
+  #esqueci>a {
     display: block;
     text-align: center;
-    border: 1px solid grey;
+    padding: 5px;
+    text-decoration: none;
+    height: 40px;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 4px;
   }
