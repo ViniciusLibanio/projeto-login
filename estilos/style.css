@@ -10,145 +10,144 @@
 */
 
 :root {
-    --verdeclaro: #c0e084;
-    --salmao: #e09484;
-    --roxo: #84a1e1;
-    --cinza: #7a808b;
-    --verdemilitar: #576145;
+  --verdeclaro: #c0e084;
+  --salmao: #e09484;
+  --roxo: #84a1e1;
+  --cinza: #7a808b;
+  --verdemilitar: #576145;
 }
 
 
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body,
 html {
-    background-color: var(--cinza);
-    height: 100vh;
-    width: 100vw;
+  background-color: var(--cinza);
+  height: 100vh;
+  width: 100vw;
 }
 
 main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 section#login>div#imagem {
-    display: block;
-    background: var(--cinza) url(../imagens/imagemlogin.jpg) no-repeat;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
+  display: block;
+  background: var(--cinza) url(../imagens/imagemlogin.jpg) no-repeat;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
 }
 
 section#login>div#formulario {
-    display: block;
-    padding: 5px;
-    margin-top: 2px;
+  display: block;
+  padding: 5px;
+  margin-top: 2px;
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    transition: width 0.5s, height 0.3s;
-    transition-timing-function: ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  overflow: hidden;
 
+  background-color: white;
+  height: 515px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(59, 59, 59);
 
-    background-color: white;
-    height: 500px;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgb(59, 59, 59);
+  /*SEMPRE COLOCAR AS ANIMAÇÕES NO FINAL DO SELETOR, PARA EVITAR INCOMPATIBILIDADE COM O NAVEGADOR.*/
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.3s;
+  transition-timing-function: ease;
 }
 
 div#formulario>h1 {
-    text-align: center;
-    margin-bottom: 1px;
+  text-align: center;
+  margin-bottom: 1px;
 }
 
 div#formulario>p {
-    font-size: 0.9em;
-    text-indent: 10px;
-    text-align: justify;
+  font-size: 0.9em;
+  text-indent: 10px;
+  text-align: justify;
+  padding: 10px 0px;
 }
 
 div.campo {
-    width: 100%;
-    height: 40px;
-    margin: 5px 0px 0px 0px;
+  width: 100%;
+  height: 44px;
+  padding: 5px 0px;
+  margin: 4px 0px;
+  background-color: #84a1e18f;
+  border-radius: 8px;
+  /*border: 2px solid rgb(243, 0, 0);*/
+}
+
+div.campo .material-symbols-outlined {
+  font-size: 2em;
+  float: left;
+  margin-right: 5px;
+  padding: 3px;
+}
+
+div.campo input {
+  background-color: rgb(236, 233, 233);
+  border-radius: 5px;
+  width: calc(100% - 45px);
+  height: 119%;
+  font-size: 1.1em;
+  border: 0px;
+  float: right;
+  margin-right: 2px;
+
+  transform: translateY(-3px);
 }
 
 
-input#ilogin {
-    float: right;
-    border-radius: 5px;
-    height: 35px;
-    width: 90%;
-    font-size: 1.1em;
+/*Deixa a caixa que está em "foco" com a cor de fundo escolhida quando clicada.*/
+div.campo input:focus-within {
+  background-color: white;
 }
 
-input#isenha {
-    float: right;
-    border-radius: 5px;
-    height: 35px;
-    width: 90%;
-    font-size: 1.1em;
+div#entrar>input {
+  height: 40px;
+  width: 100%;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--verdemilitar);
+  color: white;
 }
 
+div#entrar>input:hover {
+  background-color: #485f1e;
+}
 
-.pulse {
-    animation: pulse 3s infinite;
-    display: contents;
-  }
-  
-  @keyframes pulse {
-    0% {
-      font-variation-settings: 'wght' 100;
-    }   
-    50% {
-      font-variation-settings: 'wght' 700;
-    }
-    100% {
-      font-variation-settings: 'wght' 100;
-    }
-  }
+#entrar {
+  display: block;
+  text-align: center;
+}
 
-  div#entrar>input {
-    height: 40px;
-    width: 100%;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    background-color: #e09484;
-    color: white;
-  }
-
-  div#entrar>input:hover {
-    background-color: #b4776b;
-  }
-
-  #entrar {
-    display: block;
-    text-align: center;
-  }
-
-  #esqueci>a {
-    display: block;
-    text-align: center;
-    padding: 5px;
-    text-decoration: none;
-    height: 40px;
-    font-size: 1em;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 4px;
-  }
+#esqueci>a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  height: 40px;
+  font-size: 1em;
+  border: 1px solid var(--verdemilitar);
+  border-radius: 5px;
+  margin-top: 4px;
+  background-color: #e09484;
+  color: white;
+}

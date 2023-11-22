@@ -11,13 +11,14 @@ Extra large screens, TV – 1201px, and more.
 
 */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*CONFIG PARA TABLETS*/
     body {
         background-image: radial-gradient(rgba(187, 183, 183, 0.534), rgb(15, 15, 15));
     }
 
     section#login {
         width: 80vw;
+        height: 290px;
     }
 
     section#login>div#imagem {
@@ -32,13 +33,14 @@ Extra large screens, TV – 1201px, and more.
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) { /*CONFIG PARA TELAS GRANDES*/
     body {
         background-image: radial-gradient(rgba(187, 183, 183, 0.534), rgb(15, 15, 15));
     }
 
     section#login {
         width: 1024px;
+        height: 350px;
     }
 
     section#login>div#imagem {
@@ -57,6 +59,6 @@ Extra large screens, TV – 1201px, and more.
     }
 
     div#formulario>p {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
