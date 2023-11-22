@@ -103,7 +103,7 @@ div.campo .material-symbols-outlined {
 div.campo input {
   background-color: rgb(236, 233, 233);
   border-radius: 5px;
-  width: calc(100% - 45px);
+  width: calc(100% - 49px);
   height: 119%;
   font-size: 1.1em;
   border: 0px;
